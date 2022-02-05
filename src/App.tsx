@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import "./styles.css";
 import styled from "styled-components";
-import Table from "../components/Table.tsx";
-import { SelectedNumberFieldWrapper, Error } from "../components/Fields.tsx";
-import NumberField from "../components/NumberField.tsx";
-import Button from "../components/Button.tsx";
+import Table from "./components/Table.tsx";
+import { SelectedNumberFieldWrapper, Error } from "./components/Fields.tsx";
+import NumberField from "./components/NumberField.tsx";
+import Button from "./components/Button.tsx";
 
 const getWinNumbers = () => {
   const arr = [];
