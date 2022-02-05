@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Error = styled.div`
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   text-align: center;
   color: red;
