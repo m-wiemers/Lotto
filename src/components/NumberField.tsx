@@ -13,13 +13,13 @@ const Field = styled.button`
   display: grid;
   align-items: center;
   justify-items: center;
-  background-color: #000;
-  color: ${({ checked }: Props) => (checked ? "#00ff00" : "#fff")};
+  background-color: #ff22ff;
+  color: ${({ checked }: Props) => (checked ? "#fff" : "#000")};
   font-size: 1.5rem;
   cursor: pointer;
 
   :hover {
-    background-color: #ff22ff;
+    background-color: #009914;
   }
 `;
 

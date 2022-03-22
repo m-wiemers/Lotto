@@ -10,7 +10,6 @@ type ButtonProps = ButtonHTMLAttributes<HTMLElement> & {
 const StyledButton = styled.button`
   height: 3rem;
   border: none;
-  background-color: #000;
   color: #fff;
   padding: 0 3rem;
   font-size: 1.2rem;
@@ -20,13 +19,13 @@ const StyledButton = styled.button`
 
   :hover {
     background-color: ${({ disabled }: ButtonProps) =>
-      disabled ? "gray" : "#000"};
+      disabled ? "#8c8c8c" : "#ff8cf7"};
     cursor: ${({ disabled }: ButtonProps) =>
       disabled ? "not-allowed" : "pointer"};
   }
 
   background-color: ${({ disabled }: ButtonProps) =>
-    disabled ? "gray" : "#000"};
+    disabled ? "#8c8c8c" : "#ff22ff"};
 `;
 
 const Button = ({ label, disabled, marginBottom, ...props }: ButtonProps) => {

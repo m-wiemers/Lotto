@@ -20,6 +20,11 @@ const FieldNumbers = Array.from({ length: 49 }, (_, index) => index + 1);
 const ButtonWrapper = styled.div`
   display: flex;
   gap: 1rem;
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+    gap: 0.2rem;
+  }
 `;
 
 export default function App() {
@@ -90,9 +95,6 @@ export default function App() {
   ));
 
   const checkNumbers = (number) => {
-    if (selectedNumbers.length < 6) {
-      setErrorMessage("Du musst 6 Zahlen auswählen!");
-    }
     const result = selectedNumbers
       .map((n) => winNumbers.includes(n))
       .filter((n) => n !== false);
@@ -130,7 +132,9 @@ export default function App() {
           disabled={disableResult}
         />
       </ButtonWrapper>
-      <p>Die Gewinnzahlen lauteten:</p>
+      {displayWinNumbers === "visible" ? (
+        <p>Die Gewinnzahlen lauteten:</p>
+      ) : null}
       <SelectedNumberFieldWrapper style={{ visibility: displayWinNumbers }}>
         {winNumber}
       </SelectedNumberFieldWrapper>

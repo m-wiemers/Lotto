@@ -1,17 +1,18 @@
 import styled from "styled-components";
 
 export const Error = styled.div`
-  font-size: 1.5rem;
+  height: 3rem;
+  min-width: 300px;
+  background-color: #fff;
+  box-shadow: 3px 2px 4px #fff;
+  margin-top: 1rem;
+
+  font-size: 1rem;
+  color: #877eed;
   font-weight: 700;
   text-align: center;
-  color: red;
-  margin: 1rem;
-  min-height: 3rem;
-  border: 0.5rem solid #6a6a6a;
-  box-shadow: 3px 2px 2px black;
-  text-shadow: 3px 2px 2px black;
-  text-align: center;
-  min-width: 300px;
+  vertical-align: middle;
+  line-height: 3rem;
 `;
 
 export const SelectedNumberFieldWrapper = styled.div`
